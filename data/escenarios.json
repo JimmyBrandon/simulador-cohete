@@ -1,0 +1,70 @@
+[
+  {
+    "id": "base",
+    "name": "Desafío base",
+    "description": "Parámetros del ejercicio proporcionado.",
+    "parameters": {
+      "mass": 1000,
+      "thrust": 15000,
+      "gravity": 9.81,
+      "drag": 100,
+      "initial_velocity": 0,
+      "initial_altitude": 0,
+      "final_time": 20,
+      "step_size": 2,
+      "velocity_tolerance": 0.5,
+      "altitude_tolerance": 5
+    }
+  },
+  {
+    "id": "drag-low",
+    "name": "Menor resistencia",
+    "description": "Mismos datos base con resistencia lineal reducida a la mitad.",
+    "parameters": {
+      "mass": 1000,
+      "thrust": 15000,
+      "gravity": 9.81,
+      "drag": 50,
+      "initial_velocity": 0,
+      "initial_altitude": 0,
+      "final_time": 20,
+      "step_size": 2,
+      "velocity_tolerance": 0.5,
+      "altitude_tolerance": 5
+    }
+  },
+  {
+    "id": "no-drag",
+    "name": "Sin resistencia",
+    "description": "Caso límite útil para observar la ecuación sin fuerza de arrastre.",
+    "parameters": {
+      "mass": 1000,
+      "thrust": 15000,
+      "gravity": 9.81,
+      "drag": 0,
+      "initial_velocity": 0,
+      "initial_altitude": 0,
+      "final_time": 20,
+      "step_size": 2,
+      "velocity_tolerance": 0.5,
+      "altitude_tolerance": 5
+    }
+  },
+  {
+    "id": "thrust-high",
+    "name": "Mayor empuje",
+    "description": "Mismos datos base con un empuje de 18 000 N.",
+    "parameters": {
+      "mass": 1000,
+      "thrust": 18000,
+      "gravity": 9.81,
+      "drag": 100,
+      "initial_velocity": 0,
+      "initial_altitude": 0,
+      "final_time": 20,
+      "step_size": 2,
+      "velocity_tolerance": 0.5,
+      "altitude_tolerance": 5
+    }
+  }
+]
